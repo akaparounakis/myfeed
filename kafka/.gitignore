@@ -7,3 +7,4 @@ __pycache__/
 *.pyo
 
 # Ignore any other files or directories you don't want to track
+.idea
