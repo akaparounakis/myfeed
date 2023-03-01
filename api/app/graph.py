@@ -60,6 +60,6 @@ class Graph:
             _id = str(article.get('_id'))
             author = article.get('author')
             source_name = article.get('source', {}).get('name', {})
-            published_at = datetime.strptime(article.get('publishedAt'), '%Y-%m-%dT%H:%M:%S%z')
+            published_at = article.get('publishedAt')
             articles.append(Article(_id, author, source_name, published_at))
         return articles
