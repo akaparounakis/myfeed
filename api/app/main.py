@@ -3,7 +3,11 @@ from fastapi import FastAPI
 
 load_dotenv()
 
+from app.plot import Plot
 from app import api
+
+p = Plot()
+p.generate()
 
 app = FastAPI()
 
